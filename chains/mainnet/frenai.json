@@ -1,0 +1,26 @@
+{
+    "chain_name": "frenai",
+    "registry_name": "frenai",
+    "api": [
+        {"provider": "Azure", "address": "https://api-frenai.azure.com"},
+        {"provider": "frenai1", "address": "https://api.frenai1.com"},
+        {"provider": "frenai2", "address": "https://api.frenai2.com"}
+    ],
+    "rpc": [
+        {"provider": "Azure", "address": "https://rpc-frenai.azure.com"},
+        {"provider": "frenai1", "address": "https://rpc.frenai1.com"},
+        {"provider": "frenai2", "address": "https://rpc.frenai2.com"}
+    ],
+    "sdk_version": "0.45.1",
+    "coin_type": "118",
+    "min_tx_fee": "800",
+    "addr_prefix": "frenai",
+    "logo": "/logos/frenai.svg",
+    "assets": [{
+        "base": "ufren",
+        "symbol": "FREN",
+        "exponent": "6",
+        "coingecko_id": "frenai",
+        "logo": "/logos/frenai.svg"
+    }]
+}

@@ -10,27 +10,27 @@
 
 ```json
 {
-    "chain_name": "cosmos",
+    "chain_name": "frenstar-1",
     "api": [
         {
-            "address": "https://cosmos.api.ping.pub", 
-            "provider": "Ping"
+            "api": ["http://20.36.4.206:1317"],
+            "provider": "frenai"
         }
     ], 
     "rpc": [
         {
-            "address": "https://cosmos.api.ping.pub", 
-            "provider": "Ping"
+            "address": "http://20.36.4.206:26657", 
+            "provider": "frenai"
         }
     ],
-    "sdk_version": "0.42.6",
+    "sdk_version": "0.50.6",
     "coin_type": "118",
-    "min_tx_fee": "800",
+    "min_tx_fee": "1e-9",
     "assets": [{
-        "base": "uatom",
-        "symbol": "ATOM",
+        "base": "ufren",
+        "symbol": "FREN",
         "exponent": "6",
-        "coingecko_id": "cosmos", 
+        "coingecko_id": "fren", 
         "logo": "https://dl.airtable.com/.attachments/e54f814bba8c0f9af8a3056020210de0/2d1155fb/cosmos-hub.svg"
     }],
     "addr_prefix": "cosmos",

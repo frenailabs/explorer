@@ -1,0 +1,11 @@
+{
+    "chain_name": "frenstar-1",
+    "api": ["http://20.36.4.206:1317"],
+    "rpc": ["http://20.36.4.206:26657"],
+    "coingecko": "FREN",
+    "snapshot_provider": "https://frenstar-1.fren.ai/snapshot",
+    "sdk_version": "v0.50.6",
+    "coin_type": "118",
+    "min_tx_fee": "1e-9",
+    "addr_prefix": "fren"
+}
