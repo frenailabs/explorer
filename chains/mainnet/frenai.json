@@ -15,12 +15,12 @@
     "coin_type": "118",
     "min_tx_fee": "800",
     "addr_prefix": "frenai",
-    "logo": "/logos/frenai.svg",
+    "logo": "/dist/assets/frenai.svg",
     "assets": [{
         "base": "ufren",
         "symbol": "FREN",
         "exponent": "6",
         "coingecko_id": "frenai",
-        "logo": "/logos/frenai.svg"
+        "logo": "/dist/assets/frenai.svg"
     }]
 }
