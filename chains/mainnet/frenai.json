@@ -2,21 +2,29 @@
     "chain_name": "frenai",
     "registry_name": "frenai",
     "api": [
-        {"provider": "local", "address": "http://localhost:1317"}
+        {
+            "provider": "frenai",
+            "address": "localhost:1317"
+        }
     ],
     "rpc": [
-        {"provider": "local", "address": "http://localhost:26657"}
+        {
+            "provider": "frenai",
+            "address": "localhost:26657"
+        }
     ],
-    "sdk_version": "0.45.1",
+    "sdk_version": "0.50.6",
     "coin_type": "118",
     "min_tx_fee": "800",
     "addr_prefix": "frenai",
-    "logo": "/dist/assets/frenai.svg",
-    "assets": [{
-        "base": "ufren",
-        "symbol": "FREN",
-        "exponent": "6",
-        "coingecko_id": "frenai",
-        "logo": "/dist/assets/frenai.svg"
-    }]
+    "logo": "/frenai.svg",
+    "assets": [
+        {
+            "base": "ufren",
+            "symbol": "FREN",
+            "exponent": "6",
+            "coingecko_id": "frenai",
+            "logo": "/frenai.svg"
+        }
+    ]
 }
