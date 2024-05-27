@@ -11,7 +11,7 @@
       By&nbsp;
       <a
         class="link link-primary no-underline"
-        href="https://ping.pub"
+        href="https://fren.ai"
         target="_blank"
         rel="noopener noreferrer"
         >Ping.pub</a
@@ -28,7 +28,7 @@
       >
       <a
         class="link link-primary no-underline"
-        href="https://github.com/ping-pub/explorer"
+        href="https://github.com/frenailabs/explorer"
         target="noopener noreferrer"
         >Github</a
       >
