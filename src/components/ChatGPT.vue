@@ -3,7 +3,6 @@
     <div class="flex flex-col justify-between bg-gray-900 p-8 w-full max-w-md lg:max-w-lg gap-8 h-[60vh] aspect-[4/3] rounded-lg shadow-lg">
       <div v-if="!messages.length" class="flex flex-col items-center gap-4">
         <img src="/fren-ai-logo.svg" class="w-28 h-28" />
-        <span class="text-sm text-normal">By Julius Hellen</span>
         <span class="text-lg text-normal text-center">frenly blockchain oracle and scripting expert</span>
       </div>
       <div v-else class="flex flex-col items-center gap-4 w-full overflow-y-auto h-full bg-gray-800 p-4 rounded-lg">
