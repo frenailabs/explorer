@@ -11,6 +11,7 @@ module.exports = {
         main: 'var(--text-main)',
         secondary: 'var(--text-secondary)',
         active: 'var(--bg-active)',
+        'link-dark': '#475569'
       }
     },
   },
@@ -20,15 +21,16 @@ module.exports = {
       {
         light: {
           ...require('daisyui/src/theming/themes')['[data-theme=light]'],
-          primary: '#666cff',
+          primary: '#64748b',
+          normal: '#f8fafc'
         },
       },
       {
         dark: {
           ...require('daisyui/src/theming/themes')['[data-theme=dark]'],
-          primary: '#666cff',
+          primary: '#64748b',
           'base-100': '#2a334c',
-          'base-200': '#252d37'
+          'base-200': '#475569'
         },
       },
     ],

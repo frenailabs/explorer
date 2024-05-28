@@ -2,10 +2,9 @@
   <div class="flex justify-center items-center pt-20">
     <div class="flex flex-col justify-between bg-gray-900 p-8 w-full max-w-md lg:max-w-lg gap-8 h-[60vh] aspect-[4/3] rounded-lg shadow-lg">
       <div v-if="!messages.length" class="flex flex-col items-center gap-4">
-        <img src="/frenai.svg" class="w-16 h-16" />
-        <span class="text-white text-2xl font-bold">fren.ai (beta)</span>
-        <span class="text-sm text-gray-400">By Julius Hellen</span>
-        <span class="text-lg text-gray-300 text-center">Frenly blockchain oracle and scripting expert</span>
+        <img src="/fren-ai-logo.svg" class="w-28 h-28" />
+        <span class="text-sm text-normal">By Julius Hellen</span>
+        <span class="text-lg text-normal text-center">frenly blockchain oracle and scripting expert</span>
       </div>
       <div v-else class="flex flex-col items-center gap-4 w-full overflow-y-auto h-full bg-gray-800 p-4 rounded-lg">
         <div v-for="(message, index) in messages" :key="index" :class="{'text-blue-500': message.role === 'user', 'text-white': message.role === 'assistant'}" class="w-full">
@@ -13,9 +12,8 @@
         </div>
       </div>
       <div class="flex flex-col gap-4 w-full items-center">
-        <span v-if="!messages.length" class="text-3xl text-white">placeholder</span>
          <div class="relative w-full max-w-lg">
-          <input v-model="userInput" placeholder="Ask me anything about engineering..." class="p-4 border border-gray-400 rounded-full w-full focus:outline-none focus:border-blue-500" @keydown.enter="sendMessage" />
+          <input v-model="userInput" placeholder="Ask me anything about engineering..." class="text-normal p-4 border border-gray-400 rounded-full w-full focus:outline-none focus:border-blue-500" @keydown.enter="sendMessage" />
           <button @click="sendMessage" class="absolute right-2 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-gray-400 rounded-full flex items-center justify-center text-gray-900">
             <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 463.96 512"><path fill-rule="nonzero" d="M332.67 512V268.5h92.3c15.48-.68 26.47-5.77 32.82-15.42 17.21-25.8-5.25-52.31-22.6-69.25L261.61 14.33c-17.29-19.11-41.93-19.11-59.22 0L24.42 188.72C8.03 204.78-9.67 229.27 6.21 253.08c6.35 9.65 17.34 14.74 32.81 15.42h92.31V512h201.34z"/></svg>
           </button>
