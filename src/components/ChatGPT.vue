@@ -25,42 +25,45 @@
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
 import { ref } from 'vue';
-import { post } from "@/libs/http";
+import axios from 'axios';
 
-export default {
-  name: 'ChatGPT',
-  setup() {
-    const userInput = ref('');
-    const messages = ref([]);
+interface Message {
+  role: 'user' | 'assistant';
+  content: string;
+}
 
-    const sendMessage = async () => {
-      if (userInput.value.trim() === '') return; // Prevent sending empty messages
-      messages.value.push({ role: 'user', content: userInput.value });
-      let responseContent = 'Thinking...';
-      messages.value.push({ role: 'assistant', content: responseContent });
-      const assistantIndex = messages.value.length - 1;
+const userInput = ref<string>('');
+const messages = ref<Message[]>([]);
 
-      try {
-        const body = { model: 'gpt-4o', messages: [{ role: 'user', content: userInput.value }] };
-        const res = await post('https://api.openai.com/v1/chat/completions', body, import.meta.env.VITE_OPENAI_API_KEY);
-        responseContent = res.choices[0].message.content;
-      } catch (error) {
-        responseContent = 'Error: Unable to get a response.';
-        console.error(error);
-      } finally {
-        messages.value[assistantIndex].content = responseContent;
-        userInput.value = ''; // Reset the input field
+const sendMessage = async () => {
+  if (userInput.value.trim() === '') return; // Prevent sending empty messages
+  messages.value.push({ role: 'user', content: userInput.value });
+  let responseContent = 'Thinking...';
+  messages.value.push({ role: 'assistant', content: responseContent });
+  const assistantIndex = messages.value.length - 1;
+
+  try {
+    const body = { model: 'gpt-4', messages: [{ role: 'user', content: userInput.value }] };
+    const res = await axios.post(
+      'https://api.openai.com/v1/chat/completions',
+      body,
+      {
+        headers: {
+          'Authorization': `Bearer ${import.meta.env.VITE_OPENAI_API_KEY}`,
+          'Content-Type': 'application/json',
+        },
       }
-    };
-
-    return {
-      userInput,
-      messages,
-      sendMessage,
-    };
-  },
+    );
+    responseContent = res.data.choices[0].message.content;
+  } catch (error) {
+    responseContent = 'Error: Unable to get a response.';
+    console.error(error);
+  } finally {
+    messages.value[assistantIndex].content = responseContent;
+    userInput.value = ''; // Reset the input field
+  }
 };
 </script>
 
