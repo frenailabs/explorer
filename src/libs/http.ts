@@ -36,17 +36,23 @@ export async function getB(url: string) {
   return (await fetch(url, {referrerPolicy: 'origin-when-cross-origin'})).arrayBuffer();
 }
 
-export async function post(url: string, data: any) {
+export async function post(url: string, data: any, token?: string) {
+  const headers: HeadersInit = {
+    'Content-Type': 'application/json',
+    Accept: '*/*',
+    // 'Accept-Encoding': 'gzip, deflate, br',
+  };
+
+  if (token) {
+    headers['Authorization'] = `Bearer ${token}`;
+  }
+
   const response = await fetch(url, {
     method: 'POST', // *GET, POST, PUT, DELETE, etc.
     // mode: 'cors', // no-cors, *cors, same-origin
     // credentials: 'same-origin', // redirect: 'follow', // manual, *follow, error
     referrerPolicy: 'origin-when-cross-origin', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-    headers: {
-      'Content-Type': 'application/json',
-      Accept: '*/*',
-      // 'Accept-Encoding': 'gzip, deflate, br',
-    },
+    headers: headers,
     body: JSON.stringify(data), // body data type must match "Content-Type" header
   });
   // const response = axios.post((config ? config.api : this.config.api) + url, data)
