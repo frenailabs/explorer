@@ -30,7 +30,7 @@ export const useBlockchain = defineStore('blockchain', {
     return {
       status: {} as Record<string, string>,
       rest: '',
-      chainName: '',
+      chainName: 'frenai',
       endpoint: {} as {
         type?: EndpointType;
         address: string;

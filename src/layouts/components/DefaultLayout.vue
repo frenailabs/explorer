@@ -82,7 +82,7 @@ dayjs()
         <RouterLink to="/" class="flex items-center">
           <img class="w-10 h-10" src="../../assets/logo.svg" />
           <h1 class="flex-1 ml-3 text-2xl font-semibold dark:text-white">
-            Ping.pub
+            fren.ai
           </h1>
         </RouterLink>
         <div
@@ -241,56 +241,38 @@ dayjs()
           <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">
           {{ $t('module.sponsors') }}
         </div>
-        <a
-          href="https://osmosis.zone"
-          target="_blank"
-          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
-        >
-          <img
-            src="https://ping.pub/logos/osmosis.jpg"
-            class="w-6 h-6 rounded-full mr-3"
-          />
+        <div class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]">
+          <div
+            class="w-6 h-6 rounded-full mr-3 bg-[#e7e9ec]"
+          ></div>
           <div
             class="text-sm capitalize flex-1 text-gray-600 dark:text-gray-200"
           >
-            Osmosis
+            Sponsor 1
           </div>
-        </a>
-        <a
-          href="https://celestia.org"
-          target="_blank"
-          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
-        >
-          <img
-            src="https://ping.pub/logos/celestia.png"
-            class="w-6 h-6 rounded-full mr-3"
-          />
+        </div>
+        <div class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]">
+          <div
+            class="w-6 h-6 rounded-full mr-3 bg-[#c0c0c0]"
+          ></div>
           <div
             class="text-sm capitalize flex-1 text-gray-600 dark:text-gray-200"
           >
-            Celestia
+            Sponsor 2
           </div>
-        </a>
-        <a
-          href="https://becole.com"
-          target="_blank"
-          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
-        >
-          <img
-            src="https://becole.com/static/logo/logo_becole.png"
-            class="w-6 h-6 rounded-full mr-3"
-          />
+        </div>
+        <div class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]">
+          <div
+            class="w-6 h-6 rounded-full mr-3 bg-[#808184]"
+          ></div>
           <div
             class="text-sm capitalize flex-1 text-gray-600 dark:text-gray-200"
           >
-            Becole
+            Sponsor 3
           </div>
-        </a>
+        </div>
         <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">{{ $t('module.links') }}</div>
-        <a
-          href="https://twitter.com/ping_pub"
-          target="_blank"
-          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
+        <div class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
         >
           <Icon icon="mdi:twitter" class="text-xl mr-2" />
           <div
@@ -298,7 +280,7 @@ dayjs()
           >
             Twitter
           </div>
-        </a>
+        </div>
         <a
           v-if="showDiscord"
           href="https://discord.com/invite/CmjYVSr6GW"
