@@ -80,10 +80,7 @@ dayjs()
     >
       <div class="flex justify-between mt-1 pl-4 py-4 mb-1">
         <RouterLink to="/" class="flex items-center">
-          <img class="w-10 h-10" src="../../assets/logo.svg" />
-          <h1 class="flex-1 ml-3 text-2xl font-semibold dark:text-white">
-            fren.ai
-          </h1>
+          <img class="w-10 h-10" src="../../assets/HOME-icon.svg" />
         </RouterLink>
         <div
           class="pr-4 cursor-pointer xl:!hidden"
@@ -131,7 +128,7 @@ dayjs()
               class="w-6 h-6 rounded-full mr-3"
             />
             <div
-              class="text-base capitalize flex-1 text-gray-700 dark:text-gray-200 whitespace-nowrap"
+              class="text-base lowercase flex-1 text-gray-700 dark:text-gray-200 whitespace-nowrap"
             >
               {{ item?.title }}
             </div>
@@ -253,15 +250,39 @@ dayjs()
         </div>
         <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">{{ $t('module.links') }}</div>
         <a
-          href="https://discord.com/invite/CmjYVSr6GW"
+          href="https://t.me/frenaihub"
           target="_blank"
           class="py-2 px-4 flex items-center rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-[#373f59]"
         >
-          <Icon icon="mdi:discord" class="text-xl mr-2" />
+          <img src="@/assets/Telegram-icon.svg" class="w-5 h-5 mr-2" />
+          <div
+            class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200"
+          >
+            Telegram
+          </div>
+        </a>
+        <a
+          href="https://discord.gg/w8HQxkAp"
+          target="_blank"
+          class="py-2 px-4 flex items-center rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-[#373f59]"
+        >
+        <img src="@/assets/Discord-icon.svg" class="w-5 h-5 mr-2" />
           <div
             class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200"
           >
             Discord
+          </div>
+        </a>
+        <a
+          href="https://x.com/FrenAIHub"
+          target="_blank"
+          class="py-2 px-4 flex items-center rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-[#373f59]"
+        >
+        <img src="@/assets/X-icon.svg" class="w-5 h-5 mr-2" />
+          <div
+            class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200"
+          >
+            X
           </div>
         </a>
         <a

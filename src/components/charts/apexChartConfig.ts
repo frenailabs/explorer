@@ -92,7 +92,7 @@ const themeColors = (theme: string) => {
       surface: '#30334E',
       'surface-variant': '#BDBDBD',
       'on-surface-variant': '#424242',
-      primary: chainStore.current?.themeColor || '#666CFF',
+      primary: chainStore.current?.themeColor || '#EEEEEE',
       'primary-darken-1': '#3700B3',
       secondary: '#6D788D',
       'secondary-darken-1': '#03DAC5',
@@ -137,7 +137,7 @@ const themeColors = (theme: string) => {
       'on-grey-600': '#000',
       'on-grey-700': '#000',
       'on-grey-800': '#000',
-      'on-grey-900': '#000',
+      'on-grey-900': '#000'
     },
     variables: {
       'border-color': '#eaeaff',
