@@ -72,7 +72,7 @@ dayjs()
 </script>
 
 <template>
-  <div class="bg-gray-100 dark:bg-slate-800">
+  <div class="bg-gray-100 dark:bg-base-100">
     <!-- sidebar -->
     <div
       class="w-64 fixed z-50 left-0 top-0 bottom-0 overflow-auto bg-base-100 border-r border-gray-100 dark:border-gray-700"
@@ -238,52 +238,34 @@ dayjs()
           <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">
           {{ $t('module.sponsors') }}
         </div>
-        <div class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]">
-          <div
-            class="w-6 h-6 rounded-full mr-3 bg-[#e7e9ec]"
-          ></div>
-          <div
-            class="text-sm capitalize flex-1 text-gray-600 dark:text-gray-200"
-          >
-            Sponsor 1
-          </div>
-        </div>
+        <a
+          href="https://www.stakingrewards.com/provider/decaliio"
+          target="_blank"
+          class="py-2 px-4 flex items-center rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-[#373f59]"
+        >
+          <img src="@/assets/DECALIio.svg" class="w-6 h-6 ml-2" />
+        </a>
         <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">{{ $t('module.links') }}</div>
         <a
           href="https://t.me/frenaihub"
           target="_blank"
           class="py-2 px-4 flex items-center rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-[#373f59]"
         >
-          <img src="@/assets/Telegram-icon.svg" class="w-5 h-5 mr-2" />
-          <div
-            class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200"
-          >
-            Telegram
-          </div>
+          <img src="@/assets/Telegram-icon.svg" class="w-6 h-6 ml-2" />
         </a>
         <a
           href="https://discord.gg/w8HQxkAp"
           target="_blank"
           class="py-2 px-4 flex items-center rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-[#373f59]"
         >
-        <img src="@/assets/Discord-icon.svg" class="w-5 h-5 mr-2" />
-          <div
-            class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200"
-          >
-            Discord
-          </div>
+        <img src="@/assets/Discord-icon.svg" class="w-6 h-6 ml-2" />
         </a>
         <a
           href="https://x.com/FrenAIHub"
           target="_blank"
           class="py-2 px-4 flex items-center rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-[#373f59]"
         >
-        <img src="@/assets/X-icon.svg" class="w-5 h-5 mr-2" />
-          <div
-            class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200"
-          >
-            X
-          </div>
+        <img src="@/assets/X-icon.svg" class="w-6 h-6 ml-2" />
         </a>
         <a
           href="https://github.com/ping-pub/explorer/discussions"
