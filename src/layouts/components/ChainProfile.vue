@@ -30,7 +30,7 @@ function changeEndpoint(item: Endpoint) {
             chainStore.chainName ||
             ''
           "
-          class="capitalize whitespace-nowrap text-base font-semibold text-gray-600 dark:text-gray-200 hidden md:!block"
+          class="whitespace-nowrap text-base font-semibold text-gray-600 dark:text-gray-200 hidden md:!block"
         >
           {{ 
             baseStore.latest?.block?.header?.height
