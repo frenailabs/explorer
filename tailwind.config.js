@@ -11,7 +11,7 @@ module.exports = {
         main: 'var(--text-main)',
         secondary: 'var(--text-secondary)',
         active: 'var(--bg-active)',
-        'link-dark': '#475569'
+        'link-dark': '#f8fafc'
       }
     },
   },
@@ -30,7 +30,8 @@ module.exports = {
           ...require('daisyui/src/theming/themes')['[data-theme=dark]'],
           primary: '#64748b',
           'base-100': '#2a334c',
-          'base-200': '#475569'
+          'base-200': '#475569',
+          normal: '#f8fafc'
         },
       },
     ],
