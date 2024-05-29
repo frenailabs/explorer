@@ -12,7 +12,7 @@
       </div>
       <div class="flex flex-col gap-4 w-full items-center">
          <div class="relative w-full max-w-lg">
-          <input v-model="userInput" placeholder="Ask me anything about engineering..." class="text-normal bg-base-100 text-slate-50 p-4 border border-gray-400 rounded-full w-full focus:outline-none focus:border-blue-500" @keydown.enter="sendMessage" />
+          <input v-model="userInput" placeholder="I'm a demo—v0.1.0 release coming out soon" class="text-normal bg-base-100 text-slate-50 p-4 border border-gray-400 rounded-full w-full focus:outline-none focus:border-blue-500" @keydown.enter="sendMessage" />
           <button @click="sendMessage" class="absolute right-2 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-gray-400 rounded-full flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32" class="icon-2xl">
               <path fill="#2a334c" fill-rule="evenodd" d="M15.192 8.906a1.143 1.143 0 0 1 1.616 0l5.143 5.143a1.143 1.143 0 0 1-1.616 1.616l-3.192-3.192v9.813a1.143 1.143 0 0 1-2.286 0v-9.813l-3.192 3.192a1.143 1.143 0 1 1-1.616-1.616z" clip-rule="evenodd"></path>
