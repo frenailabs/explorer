@@ -11,7 +11,7 @@ module.exports = {
         main: 'var(--text-main)',
         secondary: 'var(--text-secondary)',
         active: 'var(--bg-active)',
-        'link-dark': '#475569'
+        'link-dark': '#f8fafc'
       }
     },
   },
