@@ -2,10 +2,10 @@
     "chain_name": "frenai",
     "registry_name": "frenai",
     "api": [
-        {"provider": "local", "address": "http://localhost:1317"}
+        {"provider": "local", "address": "http://20.22.31.128:1317"}
     ],
     "rpc": [
-        {"provider": "local", "address": "http://localhost:26657"}
+        {"provider": "local", "address": "http://20.22.31.128:26657"}
     ],
     "sdk_version": "0.45.1",
     "coin_type": "118",
@@ -20,3 +20,4 @@
         "logo": "/frenai.svg"
     }]
 }
+
