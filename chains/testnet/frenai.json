@@ -4,13 +4,13 @@
     "api": [
         {
             "provider": "frenai",
-            "address": "http://http://20.22.31.128:1317"
+            "address": "http://20.22.31.128:1317"
         }
     ],
     "rpc": [
         {
             "provider": "frenai",
-            "address": "http://http://20.22.31.128:26657"
+            "address": "http://20.22.31.128:26657"
         }
     ],
     "sdk_version": "0.50.6",
